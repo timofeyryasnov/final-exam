@@ -1,0 +1,108 @@
+/* Основной стиль для всего сайта */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  background-color: #fafafa;
+  margin: 0;
+  padding: 0;
+}
+
+/* Ссылка "Skip to Main Content" */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 10px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px;
+  text-decoration: none;
+  border-radius: 5px;
+  z-index: 10;
+}
+
+.skip-link:focus {
+  top: 10px;
+}
+
+/* Заголовок страницы */
+h1 {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* Навигация */
+nav {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Основной контент */
+main {
+  padding: 20px;
+}
+
+.content-section {
+  margin-bottom: 30px;
+}
+
+a {
+  color: #4CAF50;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Сетка изображений */
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.image-gallery img {
+  width: 100%;
+  border: 5px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Футер */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
